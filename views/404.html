@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | ATzix APIs</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        * {
+            color: #333;
+        }
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .bg-divider {
+            background-color: #fff;
+        }
+        .w-divider {
+            width: 1px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <div class="flex flex-col items-center justify-center h-screen text-white">
+        <div class="flex flex-col items-center space-y-4">
+            <div class="flex h-5 items-center space-x-4">
+                <h1 class="text-4xl font-bold" style="color: #fff">404</h1>
+                <div class="shrink-0 bg-divider border-none h-full w-divider" role="separator"></div>
+                <h2 style="color: #fff">Page Not Found-!!</h2>
+            </div>
+            <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 inline-block mb-8 glow" onclick="goBack()"> Back to Previous Page </a>
+        </div>
+    </div>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
